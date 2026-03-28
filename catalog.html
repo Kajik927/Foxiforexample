@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог товаров — Foxi.kz</title>
+  <meta name="description" content="Каталог оборудования Dahua: IP-камеры, видеорегистраторы, домофоны, аксессуары. Официальный партнёр в Астане." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="catalog.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header scrolled" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">🦊</span>
+        <span class="logo__text">Foxi<span>.kz</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#products">Продукция</a>
+        <a href="catalog.html" class="nav__catalog nav__active">Каталог</a>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#software">Скачать ПО</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <a href="https://wa.me/77000000000" class="btn btn--primary header__cta" target="_blank">WhatsApp</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Главная</a>
+        <span>→</span>
+        <span>Каталог</span>
+      </div>
+      <h1>Каталог оборудования</h1>
+      <p>Оригинальная продукция Dahua Technology с официальной гарантией</p>
+    </div>
+  </section>
+
+  <!-- CATALOG -->
+  <section class="catalog-section">
+    <div class="container catalog-layout">
+
+      <!-- SIDEBAR FILTERS -->
+      <aside class="catalog-sidebar">
+        <div class="filter-block">
+          <h3>Категории</h3>
+          <ul class="filter-list" id="categoryFilter">
+            <li class="filter-item active" data-filter="all">Все товары <span>24</span></li>
+            <li class="filter-item" data-filter="ip-camera">IP-камеры <span>8</span></li>
+            <li class="filter-item" data-filter="hdcvi-camera">HDCVI камеры <span>5</span></li>
+            <li class="filter-item" data-filter="nvr">Регистраторы NVR <span>4</span></li>
+            <li class="filter-item" data-filter="xvr">Регистраторы XVR <span>3</span></li>
+            <li class="filter-item" data-filter="intercom">Домофоны <span>4</span></li>
+          </ul>
+        </div>
+        <div class="filter-block">
+          <h3>Разрешение</h3>
+          <ul class="filter-list" id="resFilter">
+            <li class="filter-item active" data-res="all">Любое</li>
+            <li class="filter-item" data-res="2mp">2 МП (1080p)</li>
+            <li class="filter-item" data-res="4mp">4 МП (2K)</li>
+            <li class="filter-item" data-res="8mp">8 МП (4K)</li>
+          </ul>
+        </div>
+        <div class="filter-block">
+          <button class="btn btn--outline btn--full" id="resetFilters">Сбросить фильтры</button>
+        </div>
+      </aside>
+
+      <!-- PRODUCTS -->
+      <div class="catalog-main">
+        <div class="catalog-toolbar">
+          <span class="catalog-count" id="catalogCount">Показано: 24 товара</span>
+          <div class="catalog-search">
+            <input type="text" id="searchInput" placeholder="Поиск по модели..." />
+          </div>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+
+          <!-- IP CAMERAS -->
+          <div class="cat-card" data-category="ip-camera" data-res="8mp">
+            <div class="cat-card__img">📷</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP-камера</span>
+              <span class="cat-card__res">8 МП</span>
+              <h4>IPC-HDW2831T-AS</h4>
+              <p>Купольная Full-color, микрофон, ИК 30м</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="ip-camera" data-res="8mp">
+            <div class="cat-card__img">🎥</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP-камера</span>
+              <span class="cat-card__res">8 МП</span>
+              <h4>IPC-HFW2849S-S-IL</h4>
+              <p>Цилиндрическая, Smart Dual Light, AI детекция</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="ip-camera" data-res="4mp">
+            <div class="cat-card__img">🔍</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP-камера PTZ</span>
+              <span class="cat-card__res">4 МП</span>
+              <h4>SD49425XB-HNR</h4>
+              <p>Поворотная, 25x оптический зум, авто-слежение</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="ip-camera" data-res="2mp">
+            <div class="cat-card__img">📷</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP-камера</span>
+              <span class="cat-card__res">2 МП</span>
+              <h4>IPC-HDW1439T1-LED</h4>
+              <p>Купольная Full-color, без ИК, цветное изображение ночью</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="ip-camera" data-res="4mp">
+            <div class="cat-card__img">🎯</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP-камера</span>
+              <span class="cat-card__res">4 МП</span>
+              <h4>IPC-HFW1439S1-LED</h4>
+              <p>Цилиндрическая Full-color, IP67, ИК до 60м</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="ip-camera" data-res="8mp">
+            <div class="cat-card__img">🔭</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP-камера</span>
+              <span class="cat-card__res">8 МП</span>
+              <h4>IPC-HFW3849T1-AS-PV</h4>
+              <p>Активное сдерживание, сирена, красно-синяя подсветка</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="ip-camera" data-res="2mp">
+            <div class="cat-card__img">🏠</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP-камера</span>
+              <span class="cat-card__res">2 МП</span>
+              <h4>IPC-F42FEP-D</h4>
+              <p>Fisheye 360°, Full-color, встроенный микрофон</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="ip-camera" data-res="4mp">
+            <div class="cat-card__img">🌙</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP-камера</span>
+              <span class="cat-card__res">4 МП</span>
+              <h4>IPC-HDW3849H-AS-PV</h4>
+              <p>Купольная, активное сдерживание, AI детекция людей</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- HDCVI CAMERAS -->
+          <div class="cat-card" data-category="hdcvi-camera" data-res="8mp">
+            <div class="cat-card__img">📹</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">HDCVI камера</span>
+              <span class="cat-card__res">8 МП</span>
+              <h4>HAC-HDW1800T-A</h4>
+              <p>Купольная HDCVI 4K, ИК 20м, встроенный микрофон</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="hdcvi-camera" data-res="4mp">
+            <div class="cat-card__img">📹</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">HDCVI камера</span>
+              <span class="cat-card__res">4 МП</span>
+              <h4>HAC-HFW1400TP-Z-IRE6</h4>
+              <p>Цилиндрическая, моторизованный объектив 2.7-13.5мм</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="hdcvi-camera" data-res="2mp">
+            <div class="cat-card__img">📹</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">HDCVI камера</span>
+              <span class="cat-card__res">2 МП</span>
+              <h4>HAC-HDW1200T-A</h4>
+              <p>Купольная 1080p, ИК 25м, встроенный микрофон, IP67</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="hdcvi-camera" data-res="2mp">
+            <div class="cat-card__img">📹</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">HDCVI камера</span>
+              <span class="cat-card__res">2 МП</span>
+              <h4>HAC-HFW1200R-Z-IRE6</h4>
+              <p>Цилиндрическая, вариофокальный 2.7-12мм, ИК 60м</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="hdcvi-camera" data-res="4mp">
+            <div class="cat-card__img">📹</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">HDCVI камера</span>
+              <span class="cat-card__res">4 МП</span>
+              <h4>HAC-HDW1400T-Z-A</h4>
+              <p>Купольная 4МП, вариофокальный объектив, микрофон</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- NVR -->
+          <div class="cat-card" data-category="nvr" data-res="all">
+            <div class="cat-card__img">💾</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">Регистратор NVR</span>
+              <span class="cat-card__res">8 кан.</span>
+              <h4>NVR4108HS-8P-4KS2/L</h4>
+              <p>8 каналов, 8xPoE, H.265+, до 4K, 1xHDD до 10Тб</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="nvr" data-res="all">
+            <div class="cat-card__img">💾</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">Регистратор NVR</span>
+              <span class="cat-card__res">16 кан.</span>
+              <h4>NVR4116HS-4KS2/L</h4>
+              <p>16 каналов, H.265+, до 4K, 2xHDD до 20Тб</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="nvr" data-res="all">
+            <div class="cat-card__img">🖥️</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">Регистратор NVR</span>
+              <span class="cat-card__res">32 кан.</span>
+              <h4>NVR608-32-4KS2</h4>
+              <p>32 канала, 4K, AI функции, RAID, до 8xHDD</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="nvr" data-res="all">
+            <div class="cat-card__img">💿</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">Регистратор NVR</span>
+              <span class="cat-card__res">4 кан.</span>
+              <h4>NVR4104HS-P-4KS2/L</h4>
+              <p>4 канала, 4xPoE, H.265+, компактный, 1xHDD</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- XVR -->
+          <div class="cat-card" data-category="xvr" data-res="all">
+            <div class="cat-card__img">📼</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">Регистратор XVR</span>
+              <span class="cat-card__res">16 кан.</span>
+              <h4>XVR5116HS-I3</h4>
+              <p>16 каналов, HDCVI/AHD/TVI/CVBS/IP, AI функции</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="xvr" data-res="all">
+            <div class="cat-card__img">📼</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">Регистратор XVR</span>
+              <span class="cat-card__res">8 кан.</span>
+              <h4>XVR5108HS-I3</h4>
+              <p>8 каналов, H.265+, поддержка 4К HDCVI, 2xHDD</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="xvr" data-res="all">
+            <div class="cat-card__img">📼</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">Регистратор XVR</span>
+              <span class="cat-card__res">4 кан.</span>
+              <h4>XVR5104HS-I3</h4>
+              <p>4 канала, компактный, H.265+, HDCVI 4K, 1xHDD</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- INTERCOMS -->
+          <div class="cat-card" data-category="intercom" data-res="all">
+            <div class="cat-card__img">🔔</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP Домофон</span>
+              <span class="cat-card__res">2 МП</span>
+              <h4>DHI-VTO2211G-P</h4>
+              <p>Вызывная панель, считыватель Mifare, IP65, PoE</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="intercom" data-res="all">
+            <div class="cat-card__img">📱</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP Домофон</span>
+              <span class="cat-card__res">7"</span>
+              <h4>DHI-VTH2421FW-P</h4>
+              <p>Внутренний монитор 7", Android, Wi-Fi, управление замком</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="intercom" data-res="all">
+            <div class="cat-card__img">🏢</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP Домофон</span>
+              <span class="cat-card__res">Многокв.</span>
+              <h4>DHI-VTO4202F-P</h4>
+              <p>Многоквартирная панель, до 9999 квартир, распознавание лиц</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cat-card" data-category="intercom" data-res="all">
+            <div class="cat-card__img">🔑</div>
+            <div class="cat-card__body">
+              <span class="cat-card__tag">IP Домофон</span>
+              <span class="cat-card__res">2 МП</span>
+              <h4>DHI-VTO2101E-P</h4>
+              <p>Компактная вызывная панель, PoE, ИК подсветка, IP65</p>
+              <div class="cat-card__footer">
+                <a href="index.html#contacts" class="btn btn--sm btn--primary">Запросить цену</a>
+                <a href="https://www.dahuasecurity.com" target="_blank" class="cat-card__spec">Характеристики →</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- EMPTY STATE -->
+        <div class="catalog-empty hidden" id="catalogEmpty">
+          <div>🔍</div>
+          <h3>Ничего не найдено</h3>
+          <p>Попробуйте изменить фильтры или поисковый запрос</p>
+          <button class="btn btn--outline" id="resetFilters2">Сбросить фильтры</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container cta-banner__inner">
+      <div>
+        <h2>Не нашли нужную модель?</h2>
+        <p>Свяжитесь с нами — подберём оборудование под вашу задачу и бюджет</p>
+      </div>
+      <a href="https://wa.me/77000000000" target="_blank" class="btn btn--white btn--lg">Написать в WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <span class="logo__icon">🦊</span>
+          <span class="logo__text">Foxi<span>.kz</span></span>
+        </a>
+        <p>Официальный партнёр Dahua Technology.<br />Системы безопасности в Астане.</p>
+      </div>
+      <div class="footer__links">
+        <strong>Каталог</strong>
+        <a href="catalog.html">IP-камеры</a>
+        <a href="catalog.html">HDCVI камеры</a>
+        <a href="catalog.html">Регистраторы</a>
+        <a href="catalog.html">Домофоны</a>
+      </div>
+      <div class="footer__links">
+        <strong>Компания</strong>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#software">Скачать ПО</a>
+        <a href="https://foxy.kz" target="_blank">Интернет-магазин</a>
+        <a href="index.html#contacts">Контакты</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2024 ТОО «foxi.kz». Все права защищены.</span>
+        <span>Астана, Казахстан</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>
