@@ -80,11 +80,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Update count
-    const word = visible === 1 ? 'товар' : visible >= 2 && visible <= 4 ? 'товара' : 'товаров';
-    countEl.textContent = `Показано: ${visible} ${word}`;
+    countEl.textContent = `// ${visible} товар${visible === 1 ? '' : visible >= 2 && visible <= 4 ? 'а' : 'ов'}`;
 
     // Show/hide empty state
-    emptyEl.classList.toggle('hidden', visible > 0);
+    if (visible > 0) {
+      emptyEl.classList.remove('visible');
+      emptyEl.classList.add('hidden');
+    } else {
+      emptyEl.classList.remove('hidden');
+      emptyEl.classList.add('visible');
+    }
   }
 
   // Initial animation

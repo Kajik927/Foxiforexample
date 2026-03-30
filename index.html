@@ -3,32 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foxi.kz — Системы безопасности и видеонаблюдения в Астане</title>
+  <title>Foxi.kz — Системы безопасности Астана</title>
   <meta name="description" content="Официальный партнёр Dahua Technology в Астане. Продажа и установка систем видеонаблюдения, IP-камер, видеодомофонов." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <div class="noise"></div>
 
   <!-- HEADER -->
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#" class="logo">
-        <span class="logo__icon">🦊</span>
-        <span class="logo__text">Foxi<span>.kz</span></span>
+        <span class="logo__mark">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+            <rect width="34" height="34" rx="4" fill="#e63000"/>
+            <text x="17" y="24" font-family="serif" font-size="20" font-weight="900" fill="white" text-anchor="middle">F</text>
+          </svg>
+        </span>
+        <span class="logo__text">FOXI<span>.KZ</span></span>
       </a>
+
+      <div class="header__partner">
+        <span class="header__partner-sep"></span>
+        <span class="header__partner-label">Официальный партнёр</span>
+        <img src="https://www.dahuasecurity.com/logo.png" alt="Dahua" class="header__dahua-logo" />
+      </div>
+
       <nav class="nav" id="nav">
         <a href="#services">Услуги</a>
         <a href="#products">Продукция</a>
         <a href="catalog.html" class="nav__catalog">Каталог</a>
         <a href="#about">О нас</a>
-        <a href="#software">Скачать ПО</a>
+        <a href="#software">ПО</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <a href="https://wa.me/77000000000" class="btn btn--primary header__cta" target="_blank">
-        WhatsApp
-      </a>
+
+      <div class="header__actions">
+        <div class="header__status">
+          <span class="status-dot"></span>
+          <span class="mono">ONLINE</span>
+        </div>
+        <a href="#" class="header__social-btn" aria-label="WhatsApp" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="#" class="header__social-btn" aria-label="Instagram" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+      </div>
+
       <button class="burger" id="burger" aria-label="Меню">
         <span></span><span></span><span></span>
       </button>
@@ -36,210 +61,381 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero__bg"></div>
-    <div class="container hero__inner">
-      <div class="hero__badge">Официальный партнёр Dahua Technology</div>
-      <h1 class="hero__title">
-        Безопасность вашего<br />
-        <span>бизнеса и дома</span><br />
-        под контролем
-      </h1>
-      <p class="hero__desc">
-        Профессиональная установка систем видеонаблюдения, IP-камер и видеодомофонов в Астане. Более 10 лет опыта и сотни довольных клиентов.
-      </p>
-      <div class="hero__actions">
-        <a href="#contacts" class="btn btn--primary btn--lg">Получить консультацию</a>
-        <a href="#services" class="btn btn--outline btn--lg">Наши услуги</a>
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__scanlines"></div>
+
+    <!-- Viewfinder corners -->
+    <div class="vf vf--tl"></div>
+    <div class="vf vf--tr"></div>
+    <div class="vf vf--bl"></div>
+    <div class="vf vf--br"></div>
+
+    <div class="container hero__layout">
+
+      <!-- LEFT: Main content -->
+      <div class="hero__left">
+        <div class="hero__eyebrow">
+          <span class="rec-dot"></span>
+          <span class="mono">REC · CAM_01 · ASTANA</span>
+          <span class="hero__clock mono" id="liveClock">00:00:00</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="glitch" data-text="БЕЗОПАС-">БЕЗОПАС-</span>
+          <span class="glitch glitch--red" data-text="НОСТЬ">НОСТЬ</span>
+        </h1>
+
+        <p class="hero__sub mono">// Официальный партнёр <strong>Dahua Technology</strong></p>
+        <p class="hero__desc">
+          Проектирование, монтаж и обслуживание систем видеонаблюдения в Астане. Под ключ.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#contacts" class="btn btn--primary btn--lg">
+            Получить расчёт
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="catalog.html" class="btn btn--ghost btn--lg">Каталог →</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num mono" data-count="500">0+</span>
+            <span class="hero__stat-label">объектов</span>
+          </div>
+          <span class="hero__stat-div"></span>
+          <div class="hero__stat">
+            <span class="hero__stat-num mono" data-count="10">0+</span>
+            <span class="hero__stat-label">лет опыта</span>
+          </div>
+          <span class="hero__stat-div"></span>
+          <div class="hero__stat">
+            <span class="hero__stat-num mono">24/7</span>
+            <span class="hero__stat-label">поддержка</span>
+          </div>
+        </div>
       </div>
-      <div class="hero__stats">
-        <div class="stat">
-          <div class="stat__num">500+</div>
-          <div class="stat__label">Объектов под охраной</div>
+
+      <!-- RIGHT: Camera feed grid -->
+      <div class="hero__feeds">
+        <div class="feed feed--large">
+          <div class="feed__bar">
+            <span class="mono feed__id">CAM_01</span>
+            <span class="mono feed__status"><span class="rec-dot"></span> LIVE</span>
+          </div>
+          <div class="feed__content feed__content--main">
+            <svg class="feed__cam-icon" viewBox="0 0 80 60" fill="none">
+              <rect x="5" y="15" width="50" height="35" rx="4" stroke="#e63000" stroke-width="1.5"/>
+              <circle cx="30" cy="32" r="10" stroke="#e63000" stroke-width="1.5"/>
+              <circle cx="30" cy="32" r="5" fill="rgba(230,48,0,0.2)" stroke="#e63000" stroke-width="1"/>
+              <path d="M55 25l18-8v26l-18-8" stroke="#e63000" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <span class="mono feed__label">IP ВИДЕОНАБЛЮДЕНИЕ</span>
+            <span class="mono feed__spec">8MP · 4K · AI DETECTION</span>
+          </div>
+          <div class="feed__scan"></div>
+          <div class="feed__corner feed__corner--tl"></div>
+          <div class="feed__corner feed__corner--br"></div>
         </div>
-        <div class="stat">
-          <div class="stat__num">10+</div>
-          <div class="stat__label">Лет на рынке</div>
+
+        <div class="feed">
+          <div class="feed__bar">
+            <span class="mono feed__id">CAM_02</span>
+            <span class="mono feed__status">● ARMED</span>
+          </div>
+          <div class="feed__content">
+            <svg viewBox="0 0 60 50" fill="none" width="40" height="33">
+              <rect x="5" y="10" width="40" height="28" rx="3" stroke="#666" stroke-width="1.5"/>
+              <circle cx="25" cy="24" r="7" stroke="#666" stroke-width="1.5"/>
+              <path d="M45 18l13-6v20l-13-6" stroke="#666" stroke-width="1.5"/>
+            </svg>
+            <span class="mono" style="font-size:9px;color:#555">HDCVI · COAX</span>
+          </div>
         </div>
-        <div class="stat">
-          <div class="stat__num">24/7</div>
-          <div class="stat__label">Техническая поддержка</div>
+
+        <div class="feed">
+          <div class="feed__bar">
+            <span class="mono feed__id">CAM_03</span>
+            <span class="mono feed__status" style="color:#e63000">● MOTION</span>
+          </div>
+          <div class="feed__content">
+            <svg viewBox="0 0 50 50" fill="none" width="36" height="36">
+              <rect x="8" y="4" width="22" height="34" rx="3" stroke="#666" stroke-width="1.5"/>
+              <rect x="30" y="14" width="14" height="24" rx="2" stroke="#555" stroke-width="1.5"/>
+              <circle cx="19" cy="21" r="4" stroke="#666" stroke-width="1.5"/>
+            </svg>
+            <span class="mono" style="font-size:9px;color:#555">INTERCOM · IP65</span>
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="feed__bar">
+            <span class="mono feed__id">CAM_04</span>
+            <span class="mono feed__status" style="color:#00e676">● ONLINE</span>
+          </div>
+          <div class="feed__content">
+            <div class="feed__signal">
+              <span class="mono" style="font-size:10px;color:#00e676">SIGNAL</span>
+              <div class="feed__bars">
+                <span style="height:6px"></span>
+                <span style="height:10px"></span>
+                <span style="height:14px"></span>
+                <span style="height:18px"></span>
+                <span style="height:22px"></span>
+              </div>
+            </div>
+            <span class="mono" style="font-size:9px;color:#555">PTZ · 25x ZOOM</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero__scroll">
-      <div class="hero__scroll-line"></div>
+
     </div>
   </section>
 
-  <!-- PARTNERS STRIP -->
-  <div class="partners-strip">
-    <div class="container">
-      <span>Официальный партнёр:</span>
-      <img src="https://via.placeholder.com/140x36/1a1a2e/ffffff?text=Dahua+Technology" alt="Dahua Technology" />
-      <img src="https://via.placeholder.com/120x36/1a1a2e/ffffff?text=Dahua+IPC" alt="Dahua IPC" />
-      <img src="https://via.placeholder.com/120x36/1a1a2e/ffffff?text=Dahua+NVR" alt="Dahua NVR" />
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>IP ВИДЕОНАБЛЮДЕНИЕ</span>
+      <span class="ticker__dot">◆</span>
+      <span>HDCVI СИСТЕМЫ</span>
+      <span class="ticker__dot">◆</span>
+      <span>ВИДЕОДОМОФОНЫ</span>
+      <span class="ticker__dot">◆</span>
+      <span>МОНТАЖ И НАСТРОЙКА</span>
+      <span class="ticker__dot">◆</span>
+      <span>ТЕХОБСЛУЖИВАНИЕ</span>
+      <span class="ticker__dot">◆</span>
+      <span>ОБЛАКО И DMSS</span>
+      <span class="ticker__dot">◆</span>
+      <span>ОФИЦИАЛЬНЫЙ ПАРТНЁР DAHUA</span>
+      <span class="ticker__dot">◆</span>
+      <span>АСТАНА · КАЗАХСТАН</span>
+      <span class="ticker__dot">◆</span>
+      <!-- duplicate for infinite loop -->
+      <span>IP ВИДЕОНАБЛЮДЕНИЕ</span>
+      <span class="ticker__dot">◆</span>
+      <span>HDCVI СИСТЕМЫ</span>
+      <span class="ticker__dot">◆</span>
+      <span>ВИДЕОДОМОФОНЫ</span>
+      <span class="ticker__dot">◆</span>
+      <span>МОНТАЖ И НАСТРОЙКА</span>
+      <span class="ticker__dot">◆</span>
+      <span>ТЕХОБСЛУЖИВАНИЕ</span>
+      <span class="ticker__dot">◆</span>
+      <span>ОБЛАКО И DMSS</span>
+      <span class="ticker__dot">◆</span>
+      <span>ОФИЦИАЛЬНЫЙ ПАРТНЁР DAHUA</span>
+      <span class="ticker__dot">◆</span>
+      <span>АСТАНА · КАЗАХСТАН</span>
+      <span class="ticker__dot">◆</span>
+    </div>
+  </div>
+
+  <!-- PARTNER STRIP -->
+  <div class="partner-strip">
+    <div class="container partner-strip__inner">
+      <div class="partner-strip__logo">
+        <img src="https://www.dahuasecurity.com/logo.png" alt="Dahua Technology" class="partner-dahua-logo" />
+        <div class="partner-strip__text">
+          <strong>Официальный партнёр</strong>
+          <span>Dahua Technology в Казахстане</span>
+        </div>
+      </div>
+      <div class="partner-strip__badges">
+        <div class="partner-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Оригинальная продукция
+        </div>
+        <div class="partner-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          Гарантия производителя
+        </div>
+        <div class="partner-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Сертифицированные инженеры
+        </div>
+        <div class="partner-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          Тех. поддержка 24/7
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- SERVICES -->
   <section class="section services" id="services">
     <div class="container">
-      <div class="section__header">
-        <span class="section__tag">Что мы делаем</span>
-        <h2 class="section__title">Наши услуги</h2>
-        <p class="section__desc">Полный цикл работ — от проектирования до технического обслуживания</p>
+      <div class="section__head">
+        <div class="section__head-left">
+          <span class="section__tag mono">// 01 · УСЛУГИ</span>
+          <h2 class="section__title">Что мы <span class="text-red">делаем</span></h2>
+        </div>
+        <p class="section__desc">Полный цикл — от проекта до обслуживания</p>
       </div>
-      <div class="services__grid">
 
-        <div class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="2.5"/>
-              <circle cx="24" cy="24" r="8" fill="currentColor" opacity="0.15"/>
-              <circle cx="24" cy="24" r="4" fill="currentColor"/>
-              <line x1="24" y1="2" x2="24" y2="12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="24" y1="36" x2="24" y2="46" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="2" y1="24" x2="12" y2="24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="36" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <div class="services__rows">
+
+        <div class="srow reveal">
+          <span class="srow__num mono">01</span>
+          <div class="srow__body">
+            <svg class="srow__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="9" stroke-dasharray="3 2" opacity="0.5"/>
+              <line x1="12" y1="3" x2="12" y2="7"/><line x1="12" y1="17" x2="12" y2="21"/>
+              <line x1="3" y1="12" x2="7" y2="12"/><line x1="17" y1="12" x2="21" y2="12"/>
             </svg>
+            <span class="srow__name">IP Видеонаблюдение</span>
+            <span class="srow__desc">Сетевые камеры до 4K с удалённым доступом, детекцией движения и AI-аналитикой лиц</span>
           </div>
-          <h3>IP Видеонаблюдение</h3>
-          <p>Сетевые IP-камеры высокого разрешения с удалённым доступом через мобильное приложение. Запись 24/7 на сетевые видеорегистраторы (NVR).</p>
-          <ul class="service-card__features">
-            <li>Разрешение до 8 МП (4K)</li>
-            <li>Ночное видение до 60 м</li>
-            <li>Удалённый просмотр со смартфона</li>
-          </ul>
-          <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          <div class="srow__tags">
+            <span class="srow__tag">4K · 8МП</span>
+            <span class="srow__tag">AI-аналитика</span>
+            <span class="srow__tag">PoE</span>
+          </div>
+          <a href="#contacts" class="srow__arrow">→</a>
         </div>
 
-        <div class="service-card service-card--featured">
-          <div class="service-card__badge">Популярно</div>
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="4" y="10" width="40" height="28" rx="4" stroke="currentColor" stroke-width="2.5"/>
-              <polyline points="4,16 24,28 44,16" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+        <div class="srow reveal">
+          <span class="srow__num mono">02</span>
+          <div class="srow__body">
+            <svg class="srow__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
+              <line x1="2" y1="13" x2="22" y2="13" stroke-dasharray="2 1.5" opacity="0.5"/>
             </svg>
+            <span class="srow__name">HDCVI Видеосистемы</span>
+            <span class="srow__desc">HD по коаксиальному кабелю — идеально для модернизации существующих аналоговых систем</span>
           </div>
-          <h3>HDCVI видеосистемы</h3>
-          <p>Аналоговые системы нового поколения на базе HDCVI технологии. Идеально для модернизации существующей кабельной инфраструктуры.</p>
-          <ul class="service-card__features">
-            <li>Передача HD по коаксиалу</li>
-            <li>Экономия на монтаже</li>
-            <li>Совместимость с XVR/HCVR</li>
-          </ul>
-          <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          <div class="srow__tags">
+            <span class="srow__tag">HD-CVI</span>
+            <span class="srow__tag">Коаксиал</span>
+            <span class="srow__tag">Модернизация</span>
+          </div>
+          <a href="#contacts" class="srow__arrow">→</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8" y="4" width="20" height="32" rx="3" stroke="currentColor" stroke-width="2.5"/>
-              <rect x="28" y="12" width="16" height="24" rx="3" stroke="currentColor" stroke-width="2.5"/>
-              <line x1="14" y1="40" x2="14" y2="44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="36" y1="40" x2="36" y2="44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <circle cx="18" cy="20" r="2" fill="currentColor"/>
+        <div class="srow reveal">
+          <span class="srow__num mono">03</span>
+          <div class="srow__body">
+            <svg class="srow__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="2" width="11" height="18" rx="2"/>
+              <rect x="14" y="8" width="7" height="12" rx="1"/>
+              <circle cx="8.5" cy="11" r="2.5"/>
             </svg>
+            <span class="srow__name">IP Видеодомофоны</span>
+            <span class="srow__desc">Умный контроль доступа — открывайте дверь со смартфона из любой точки мира</span>
           </div>
-          <h3>IP Видеодомофоны</h3>
-          <p>Умные системы контроля доступа с видеосвязью. Управляйте входом в здание с телефона из любой точки мира.</p>
-          <ul class="service-card__features">
-            <li>Видеозвонок на смартфон</li>
-            <li>Удалённое открытие двери</li>
-            <li>Распознавание лиц (опция)</li>
-          </ul>
-          <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          <div class="srow__tags">
+            <span class="srow__tag">Смартфон</span>
+            <span class="srow__tag">RFID</span>
+            <span class="srow__tag">Видеосвязь</span>
+          </div>
+          <a href="#contacts" class="srow__arrow">→</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 4 L6 14 L6 26 C6 35 14 42 24 46 C34 42 42 35 42 26 L42 14 Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
-              <polyline points="16,24 21,29 32,18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="srow reveal">
+          <span class="srow__num mono">04</span>
+          <div class="srow__body">
+            <svg class="srow__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L4 7v6c0 5.5 3.5 10.7 8 12 4.5-1.3 8-6.5 8-12V7z"/>
+              <polyline points="9,12 11,14 15,10" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
+            <span class="srow__name">Монтаж и настройка</span>
+            <span class="srow__desc">Профессиональная установка с гарантией, пуско-наладка, настройка удалённого доступа</span>
           </div>
-          <h3>Монтаж и настройка</h3>
-          <p>Профессиональный монтаж оборудования с гарантией. Настройка удалённого доступа, мобильных приложений и интеграций.</p>
-          <ul class="service-card__features">
-            <li>Проектирование системы</li>
-            <li>Прокладка кабелей</li>
-            <li>Гарантийное обслуживание</li>
-          </ul>
-          <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          <div class="srow__tags">
+            <span class="srow__tag">Гарантия</span>
+            <span class="srow__tag">Обучение</span>
+            <span class="srow__tag">Под ключ</span>
+          </div>
+          <a href="#contacts" class="srow__arrow">→</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M24 14 L24 24 L32 28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <div class="srow reveal">
+          <span class="srow__num mono">05</span>
+          <div class="srow__body">
+            <svg class="srow__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3.5 3.5" stroke-linecap="round"/>
             </svg>
+            <span class="srow__name">Техническое обслуживание</span>
+            <span class="srow__desc">Плановое ТО, диагностика, ремонт оборудования и обновление прошивок</span>
           </div>
-          <h3>Техническое обслуживание</h3>
-          <p>Регулярное ТО систем безопасности, чистка камер, обновление прошивок и программного обеспечения. Выезд специалиста.</p>
-          <ul class="service-card__features">
-            <li>Плановое обслуживание</li>
-            <li>Диагностика и ремонт</li>
-            <li>Обновление ПО</li>
-          </ul>
-          <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          <div class="srow__tags">
+            <span class="srow__tag">Плановое ТО</span>
+            <span class="srow__tag">Диагностика</span>
+            <span class="srow__tag">Ремонт</span>
+          </div>
+          <a href="#contacts" class="srow__arrow">→</a>
         </div>
 
-        <div class="service-card">
-          <div class="service-card__icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="6" y="8" width="36" height="26" rx="3" stroke="currentColor" stroke-width="2.5"/>
-              <line x1="16" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="24" y1="34" x2="24" y2="40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <rect x="12" y="14" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
-              <rect x="24" y="14" width="8" height="8" rx="1" stroke="currentColor" stroke-width="2"/>
+        <div class="srow reveal">
+          <span class="srow__num mono">06</span>
+          <div class="srow__body">
+            <svg class="srow__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="4" width="20" height="14" rx="2"/>
+              <line x1="6" y1="22" x2="18" y2="22"/><line x1="12" y1="18" x2="12" y2="22"/>
+              <rect x="5" y="8" width="4" height="4" rx="0.5"/>
+              <rect x="15" y="8" width="4" height="4" rx="0.5"/>
             </svg>
+            <span class="srow__name">Облако и мониторинг</span>
+            <span class="srow__desc">DMSS, облачное хранилище, push-уведомления о тревоге в реальном времени</span>
           </div>
-          <h3>Мониторинг и облако</h3>
-          <p>Подключение к облачному хранилищу видеозаписей. Просмотр в реальном времени через приложение DMSS с любого устройства.</p>
-          <ul class="service-card__features">
-            <li>Приложение DMSS / Smart PSS</li>
-            <li>Облачное хранилище</li>
-            <li>Уведомления о движении</li>
-          </ul>
-          <a href="#contacts" class="service-card__link">Узнать подробнее →</a>
+          <div class="srow__tags">
+            <span class="srow__tag">DMSS</span>
+            <span class="srow__tag">Облако</span>
+            <span class="srow__tag">Push 24/7</span>
+          </div>
+          <a href="#contacts" class="srow__arrow">→</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- HOW WE WORK -->
+  <!-- PROCESS -->
   <section class="section process">
     <div class="container">
-      <div class="section__header">
-        <span class="section__tag">Процесс</span>
-        <h2 class="section__title">Как мы работаем</h2>
+      <div class="section__head">
+        <div class="section__head-left">
+          <span class="section__tag mono">// 02 · ПРОЦЕСС</span>
+          <h2 class="section__title">Как мы <span class="text-red">работаем</span></h2>
+        </div>
       </div>
-      <div class="process__steps">
-        <div class="process__step">
-          <div class="process__num">01</div>
-          <h4>Консультация</h4>
-          <p>Бесплатная консультация: обсуждаем задачу, осматриваем объект или принимаем план помещения</p>
+
+      <div class="process__track">
+        <div class="process__line"></div>
+
+        <div class="process__step reveal">
+          <div class="process__step-num mono">01</div>
+          <div class="process__step-body">
+            <h4>Консультация</h4>
+            <p>Бесплатный выезд или онлайн-встреча. Обсуждаем задачу и осматриваем объект</p>
+          </div>
         </div>
-        <div class="process__arrow">→</div>
-        <div class="process__step">
-          <div class="process__num">02</div>
-          <h4>Проект и смета</h4>
-          <p>Разрабатываем схему размещения камер и составляем точную смету без скрытых платежей</p>
+
+        <div class="process__step reveal">
+          <div class="process__step-num mono">02</div>
+          <div class="process__step-body">
+            <h4>Проект и смета</h4>
+            <p>Разрабатываем схему камер и составляем точную смету без скрытых платежей</p>
+          </div>
         </div>
-        <div class="process__arrow">→</div>
-        <div class="process__step">
-          <div class="process__num">03</div>
-          <h4>Монтаж</h4>
-          <p>Профессиональная установка в согласованные сроки. Все работы — аккуратно и в чистоте</p>
+
+        <div class="process__step reveal">
+          <div class="process__step-num mono">03</div>
+          <div class="process__step-body">
+            <h4>Монтаж</h4>
+            <p>Установка в согласованные сроки. Чисто, аккуратно, с гарантией на все работы</p>
+          </div>
         </div>
-        <div class="process__arrow">→</div>
-        <div class="process__step">
-          <div class="process__num">04</div>
-          <h4>Сдача объекта</h4>
-          <p>Настройка доступа, обучение персонала и подписание акта выполненных работ с гарантией</p>
+
+        <div class="process__step reveal">
+          <div class="process__step-num mono">04</div>
+          <div class="process__step-body">
+            <h4>Сдача объекта</h4>
+            <p>Настройка доступа, обучение персонала, подписание акта и гарантийный период</p>
+          </div>
         </div>
       </div>
     </div>
@@ -248,102 +444,229 @@
   <!-- PRODUCTS -->
   <section class="section products" id="products">
     <div class="container">
-      <div class="section__header">
-        <span class="section__tag">Продукция</span>
-        <h2 class="section__title">Оборудование Dahua</h2>
-        <p class="section__desc">Только оригинальное оборудование с официальной гарантией</p>
+      <div class="section__head">
+        <div class="section__head-left">
+          <span class="section__tag mono">// 03 · ПРОДУКЦИЯ</span>
+          <h2 class="section__title">Оборудование <span class="text-red">Dahua</span></h2>
+        </div>
+        <p class="section__desc">Оригинальная продукция с официальной гарантией</p>
       </div>
+
       <div class="products__tabs">
         <button class="tab tab--active" data-tab="cameras">IP-камеры</button>
         <button class="tab" data-tab="recorders">Регистраторы</button>
         <button class="tab" data-tab="intercoms">Домофоны</button>
       </div>
+
       <div class="products__grid" id="tab-cameras">
-        <div class="product-card">
-          <div class="product-card__img">📷</div>
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <rect x="15" y="25" width="70" height="48" rx="6" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <circle cx="50" cy="49" r="14" fill="#111" stroke="#e63000" stroke-width="1.5"/>
+              <circle cx="50" cy="49" r="7" fill="#0a0a0a" stroke="#e63000" stroke-width="1"/>
+              <circle cx="50" cy="49" r="3" fill="#e63000" opacity="0.5"/>
+              <path d="M85 35l28-12v38l-28-12" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <line x1="15" y1="73" x2="85" y2="73" stroke="#222" stroke-width="1"/>
+            </svg>
+            <div class="product-card__cam-id mono">IPC-HDW2831T-AS</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">2 МП</span>
-            <h4>IPC-HDW2831T-AS</h4>
-            <p>Купольная IP-камера 8 МП Full-color. Цветное изображение в полной темноте, микрофон.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">8 МП</span>
+              <span class="spec-badge">4K</span>
+              <span class="spec-badge">Full-color</span>
+            </div>
+            <h4>Купольная IP-камера</h4>
+            <p>Full-color, встроенный микрофон, ИК 30м</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-card__img">🎥</div>
+
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <rect x="20" y="20" width="80" height="55" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <circle cx="60" cy="47" r="15" fill="#111" stroke="#444" stroke-width="1.5"/>
+              <circle cx="60" cy="47" r="8" fill="#0a0a0a" stroke="#444" stroke-width="1"/>
+              <rect x="30" y="28" width="8" height="6" rx="1" fill="#222" stroke="#333"/>
+              <line x1="20" y1="75" x2="100" y2="75" stroke="#222" stroke-width="1"/>
+            </svg>
+            <div class="product-card__cam-id mono">IPC-HFW2849S-S-IL</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">4K</span>
-            <h4>IPC-HFW2849S-S-IL</h4>
-            <p>Цилиндрическая 8 МП камера с двойной подсветкой Smart Dual Light и AI детекцией.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">8 МП</span>
+              <span class="spec-badge spec-badge--red">AI</span>
+              <span class="spec-badge">Dual Light</span>
+            </div>
+            <h4>Цилиндрическая Smart</h4>
+            <p>Smart Dual Light, AI детекция людей</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-card__img">🔍</div>
+
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <circle cx="60" cy="45" r="28" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <circle cx="60" cy="45" r="16" fill="#111" stroke="#444" stroke-width="1.5"/>
+              <circle cx="60" cy="45" r="6" fill="#0a0a0a" stroke="#444"/>
+              <rect x="50" y="10" width="20" height="8" rx="2" fill="#222" stroke="#333"/>
+              <line x1="60" y1="18" x2="60" y2="29" stroke="#333" stroke-width="1"/>
+              <path d="M40 73h40" stroke="#333" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <div class="product-card__cam-id mono">SD49425XB-HNR</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">PTZ</span>
-            <h4>SD49425XB-HNR</h4>
-            <p>Поворотная PTZ-камера 4 МП с 25x оптическим зумом. Авто-слежение за объектом.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">PTZ</span>
+              <span class="spec-badge spec-badge--red">25x Zoom</span>
+              <span class="spec-badge">AI</span>
+            </div>
+            <h4>Поворотная PTZ</h4>
+            <p>25x оптический зум, AI слежение</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
       </div>
+
       <div class="products__grid hidden" id="tab-recorders">
-        <div class="product-card">
-          <div class="product-card__img">💾</div>
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <rect x="10" y="25" width="100" height="50" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <rect x="18" y="33" width="40" height="24" rx="2" fill="#111" stroke="#444" stroke-width="1"/>
+              <circle cx="90" cy="45" r="8" fill="#111" stroke="#444"/>
+              <rect x="18" y="63" width="84" height="3" rx="1" fill="#222"/>
+            </svg>
+            <div class="product-card__cam-id mono">NVR4108HS-8P-4KS2/L</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">NVR</span>
-            <h4>NVR4108HS-8P-4KS2/L</h4>
-            <p>Сетевой видеорегистратор на 8 каналов, PoE, разрешение до 4K, H.265+.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">NVR</span>
+              <span class="spec-badge spec-badge--red">8 каналов</span>
+              <span class="spec-badge">PoE</span>
+            </div>
+            <h4>IP-видеорегистратор</h4>
+            <p>8 каналов PoE, H.265+, до 4K</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-card__img">📼</div>
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <rect x="10" y="20" width="100" height="55" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <rect x="18" y="28" width="84" height="10" rx="1" fill="#111" stroke="#444" stroke-width="1"/>
+              <rect x="18" y="42" width="84" height="10" rx="1" fill="#111" stroke="#444" stroke-width="1"/>
+              <rect x="18" y="56" width="40" height="10" rx="1" fill="#111" stroke="#444" stroke-width="1"/>
+            </svg>
+            <div class="product-card__cam-id mono">XVR5116HS-I3</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">XVR</span>
-            <h4>XVR5116HS-I3</h4>
-            <p>Гибридный видеорегистратор 16 каналов. Поддержка HDCVI/AHD/TVI/CVBS/IP.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">XVR</span>
+              <span class="spec-badge spec-badge--red">16 каналов</span>
+              <span class="spec-badge">AI</span>
+            </div>
+            <h4>Гибридный регистратор</h4>
+            <p>HDCVI/AHD/TVI/CVBS/IP, AI функции</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-card__img">🖥️</div>
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <rect x="5" y="15" width="110" height="62" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <rect x="13" y="23" width="94" height="8" rx="1" fill="#111" stroke="#444" stroke-width="1"/>
+              <rect x="13" y="35" width="94" height="8" rx="1" fill="#111" stroke="#444" stroke-width="1"/>
+              <rect x="13" y="47" width="94" height="8" rx="1" fill="#111" stroke="#444" stroke-width="1"/>
+              <rect x="13" y="59" width="44" height="8" rx="1" fill="#e63000" opacity="0.3" stroke="#e63000" stroke-width="1"/>
+            </svg>
+            <div class="product-card__cam-id mono">NVR608-32-4KS2</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">32 канала</span>
-            <h4>NVR608-32-4KS2</h4>
-            <p>Профессиональный регистратор 32 канала 4K для крупных объектов и торговых центров.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">NVR</span>
+              <span class="spec-badge spec-badge--red">32 канала</span>
+              <span class="spec-badge">RAID</span>
+            </div>
+            <h4>Профессиональный NVR</h4>
+            <p>32 канала, 4K, RAID, до 8xHDD</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
       </div>
+
       <div class="products__grid hidden" id="tab-intercoms">
-        <div class="product-card">
-          <div class="product-card__img">🔔</div>
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <rect x="35" y="8" width="50" height="75" rx="6" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <rect x="42" y="16" width="36" height="26" rx="3" fill="#111" stroke="#444" stroke-width="1"/>
+              <circle cx="60" cy="55" r="8" fill="#111" stroke="#444"/>
+              <circle cx="60" cy="55" r="3" fill="#e63000" opacity="0.5"/>
+            </svg>
+            <div class="product-card__cam-id mono">DHI-VTO2211G-P</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">IP домофон</span>
-            <h4>DHI-VTO2211G-P</h4>
-            <p>Вызывная панель IP-домофона 2 МП, встроенный считыватель карт Mifare, IP65.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">IP</span>
+              <span class="spec-badge">2МП</span>
+              <span class="spec-badge spec-badge--red">PoE</span>
+            </div>
+            <h4>Вызывная панель</h4>
+            <p>IP65, Mifare, видеозвонок</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-card__img">📱</div>
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <rect x="20" y="10" width="80" height="70" rx="6" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <rect x="28" y="18" width="64" height="44" rx="3" fill="#111" stroke="#444" stroke-width="1"/>
+              <circle cx="60" cy="72" r="5" fill="#222" stroke="#444"/>
+            </svg>
+            <div class="product-card__cam-id mono">DHI-VTH2421FW-P</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">Видеомонитор</span>
-            <h4>DHI-VTH2421FW-P</h4>
-            <p>Внутренний монитор 7" с Android, Wi-Fi, управление замком, просмотр IP-камер.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">7"</span>
+              <span class="spec-badge spec-badge--red">Android</span>
+              <span class="spec-badge">Wi-Fi</span>
+            </div>
+            <h4>Видеомонитор</h4>
+            <p>Android, Wi-Fi, управление замком</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
-        <div class="product-card">
-          <div class="product-card__img">🏢</div>
+        <div class="product-card reveal">
+          <div class="product-card__visual">
+            <svg viewBox="0 0 120 90" fill="none">
+              <rect x="30" y="5" width="60" height="80" rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1.5"/>
+              <rect x="38" y="13" width="44" height="30" rx="2" fill="#111" stroke="#444" stroke-width="1"/>
+              <rect x="38" y="50" width="18" height="6" rx="1" fill="#222" stroke="#444"/>
+              <rect x="64" y="50" width="18" height="6" rx="1" fill="#e63000" opacity="0.3" stroke="#e63000" stroke-width="1"/>
+            </svg>
+            <div class="product-card__cam-id mono">DHI-VTO4202F-P</div>
+          </div>
           <div class="product-card__body">
-            <span class="product-card__tag">Многоквартирный</span>
-            <h4>DHI-VTO4202F-P</h4>
-            <p>Вызывная панель для многоквартирных домов. Поддержка до 9999 квартир.</p>
+            <div class="product-card__specs">
+              <span class="spec-badge">9999 кв.</span>
+              <span class="spec-badge spec-badge--red">Face ID</span>
+            </div>
+            <h4>Многоквартирная панель</h4>
+            <p>До 9999 квартир, распознавание лиц</p>
             <a href="#contacts" class="btn btn--sm btn--outline">Запросить цену</a>
           </div>
         </div>
+      </div>
+
+      <div class="products__cta">
+        <a href="catalog.html" class="btn btn--primary btn--lg">
+          Смотреть весь каталог — 24 товара
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
       </div>
     </div>
   </section>
@@ -352,27 +675,28 @@
   <section class="section about" id="about">
     <div class="container about__inner">
       <div class="about__content">
-        <span class="section__tag">О компании</span>
-        <h2 class="section__title">Foxi.kz — надёжный партнёр в безопасности</h2>
-        <p>Мы являемся официальным партнёром Dahua Technology в Астане и специализируемся на комплексных решениях безопасности для бизнеса и частных клиентов.</p>
-        <p>Наша команда сертифицированных специалистов реализовала сотни проектов — от камеры в квартире до многокамерных систем на производстве и в торговых центрах.</p>
-        <div class="about__values">
-          <div class="about__value">
-            <span>✓</span>
+        <span class="section__tag mono">// 04 · О НАС</span>
+        <h2 class="section__title">Foxi.kz —<br/><span class="text-red">надёжный партнёр</span></h2>
+        <p>Официальный партнёр Dahua Technology в Астане. Специализируемся на комплексных решениях безопасности для бизнеса и частных клиентов.</p>
+        <p>Сертифицированные специалисты реализовали сотни проектов — от камеры в квартире до многокамерных систем на производстве.</p>
+
+        <div class="about__vals">
+          <div class="about__val">
+            <span class="about__val-check mono text-red">✓</span>
             <div>
               <strong>Официальный поставщик</strong>
               <p>Оригинальное оборудование Dahua с гарантией производителя</p>
             </div>
           </div>
-          <div class="about__value">
-            <span>✓</span>
+          <div class="about__val">
+            <span class="about__val-check mono text-red">✓</span>
             <div>
               <strong>Собственный сервис</strong>
               <p>Штатные технические специалисты, а не субподрядчики</p>
             </div>
           </div>
-          <div class="about__value">
-            <span>✓</span>
+          <div class="about__val">
+            <span class="about__val-check mono text-red">✓</span>
             <div>
               <strong>Прозрачные цены</strong>
               <p>Точная смета до начала работ без доплат и сюрпризов</p>
@@ -380,182 +704,253 @@
           </div>
         </div>
       </div>
-      <div class="about__visual">
-        <div class="about__card about__card--1">
-          <div class="about__card-icon">🏆</div>
-          <div>
-            <strong>Официальный партнёр</strong>
-            <span>Dahua Technology</span>
+
+      <div class="about__monitor reveal">
+        <div class="monitor__header">
+          <div class="monitor__dots">
+            <span></span><span style="background:#e63000"></span><span style="background:#00e676"></span>
+          </div>
+          <span class="mono" id="screenClock">LIVE · 00:00:00</span>
+          <span class="rec-dot"></span>
+        </div>
+        <div class="monitor__feeds">
+          <div class="monitor__feed">
+            <span class="mono monitor__feed-id">CAM_01</span>
+            <div class="monitor__feed-img">
+              <svg viewBox="0 0 60 50" fill="none" width="36">
+                <rect x="5" y="8" width="50" height="36" rx="3" stroke="#333" stroke-width="1.5"/>
+                <rect x="10" y="14" width="18" height="14" rx="1" fill="#1a1a1a" stroke="#444"/>
+                <rect x="32" y="14" width="18" height="14" rx="1" fill="#1a1a1a" stroke="#444"/>
+              </svg>
+            </div>
+          </div>
+          <div class="monitor__feed">
+            <span class="mono monitor__feed-id">CAM_02</span>
+            <div class="monitor__feed-img">
+              <svg viewBox="0 0 60 50" fill="none" width="36">
+                <circle cx="30" cy="25" r="18" stroke="#333" stroke-width="1.5"/>
+                <circle cx="30" cy="25" r="8" stroke="#444" stroke-width="1.5"/>
+                <circle cx="30" cy="25" r="3" fill="#333"/>
+              </svg>
+            </div>
+          </div>
+          <div class="monitor__feed">
+            <span class="mono monitor__feed-id">CAM_03</span>
+            <div class="monitor__feed-img">
+              <svg viewBox="0 0 60 50" fill="none" width="36">
+                <path d="M30 5L8 18v12c0 9 8 16 22 20 14-4 22-11 22-20V18z" stroke="#333" stroke-width="1.5"/>
+                <polyline points="22,25 27,30 38,20" stroke="#e63000" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="monitor__feed monitor__feed--main">
+            <span class="mono monitor__feed-id">CAM_04 · MAIN</span>
+            <div class="monitor__feed-img monitor__feed-img--scan">
+              <svg viewBox="0 0 60 50" fill="none" width="46">
+                <rect x="5" y="8" width="50" height="36" rx="3" stroke="#e63000" stroke-width="1.5"/>
+                <circle cx="30" cy="26" r="10" stroke="#e63000" stroke-width="1"/>
+                <circle cx="30" cy="26" r="4" fill="#e63000" opacity="0.3"/>
+                <line x1="5" y1="26" x2="20" y2="26" stroke="#e63000" stroke-width="0.5" opacity="0.5"/>
+                <line x1="40" y1="26" x2="55" y2="26" stroke="#e63000" stroke-width="0.5" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="monitor__scan"></div>
           </div>
         </div>
-        <div class="about__card about__card--2">
-          <div class="about__card-icon">📍</div>
-          <div>
-            <strong>Астана, Казахстан</strong>
-            <span>Работаем по всему городу</span>
-          </div>
+        <div class="monitor__footer">
+          <span class="mono">FOXI.KZ · ASTANA · KZ</span>
+          <span class="mono" style="color:#00e676">● ONLINE</span>
         </div>
-        <div class="about__card about__card--3">
-          <div class="about__card-icon">⭐</div>
-          <div>
-            <strong>500+ объектов</strong>
-            <span>Успешно реализованных</span>
-          </div>
-        </div>
-        <div class="about__bg-shape"></div>
       </div>
     </div>
   </section>
 
-  <!-- SOFTWARE DOWNLOADS -->
+  <!-- SOFTWARE -->
   <section class="section software" id="software">
     <div class="container">
-      <div class="section__header">
-        <span class="section__tag">Программное обеспечение</span>
-        <h2 class="section__title">Скачать ПО и прошивки</h2>
-        <p class="section__desc">Актуальные версии программного обеспечения для оборудования Dahua</p>
+      <div class="section__head">
+        <div class="section__head-left">
+          <span class="section__tag mono">// 05 · ПО</span>
+          <h2 class="section__title">Скачать <span class="text-red">программы</span></h2>
+        </div>
+        <p class="section__desc">Актуальные версии ПО для оборудования Dahua</p>
       </div>
+
       <div class="software__grid">
-
-        <div class="software-card">
-          <div class="software-card__icon">📱</div>
+        <div class="software-card reveal">
+          <div class="software-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="32" height="32">
+              <rect x="8" y="4" width="32" height="40" rx="6" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="14" y="12" width="20" height="14" rx="2" fill="#1a1a1a" stroke="#444" stroke-width="1"/>
+              <circle cx="24" cy="35" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
           <div class="software-card__body">
+            <span class="mono software-card__tag">MOBILE APP</span>
             <h4>DMSS Mobile</h4>
-            <p>Мобильное приложение для просмотра камер на смартфоне</p>
-            <div class="software-card__badges">
-              <span>iOS</span>
-              <span>Android</span>
-            </div>
+            <p>Просмотр камер на смартфоне</p>
+            <div class="software-card__badges"><span>iOS</span><span>Android</span></div>
           </div>
-          <a href="https://foxi.kz" target="_blank" class="btn btn--sm btn--primary">Скачать</a>
+          <a href="https://foxi.kz" target="_blank" class="btn btn--sm btn--primary">↓ Скачать</a>
         </div>
 
-        <div class="software-card">
-          <div class="software-card__icon">💻</div>
+        <div class="software-card reveal">
+          <div class="software-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="32" height="32">
+              <rect x="4" y="8" width="40" height="28" rx="4" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="16" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <line x1="24" y1="36" x2="24" y2="40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div class="software-card__body">
+            <span class="mono software-card__tag">DESKTOP</span>
             <h4>SmartPSS 2.0</h4>
-            <p>Профессиональная система управления для ПК</p>
-            <div class="software-card__badges">
-              <span>Windows</span>
-              <span>macOS</span>
-            </div>
+            <p>Профессиональное управление на ПК</p>
+            <div class="software-card__badges"><span>Windows</span><span>macOS</span></div>
           </div>
-          <a href="https://foxi.kz" target="_blank" class="btn btn--sm btn--primary">Скачать</a>
+          <a href="https://foxi.kz" target="_blank" class="btn btn--sm btn--primary">↓ Скачать</a>
         </div>
 
-        <div class="software-card">
-          <div class="software-card__icon">🔧</div>
+        <div class="software-card reveal">
+          <div class="software-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="32" height="32">
+              <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <div class="software-card__body">
+            <span class="mono software-card__tag">UTILITY</span>
             <h4>ToolBox</h4>
-            <p>Инструмент для настройки и обновления устройств</p>
-            <div class="software-card__badges">
-              <span>Windows</span>
-            </div>
+            <p>Настройка и обновление устройств</p>
+            <div class="software-card__badges"><span>Windows</span></div>
           </div>
-          <a href="https://foxi.kz" target="_blank" class="btn btn--sm btn--primary">Скачать</a>
+          <a href="https://foxi.kz" target="_blank" class="btn btn--sm btn--primary">↓ Скачать</a>
         </div>
 
-        <div class="software-card">
-          <div class="software-card__icon">📊</div>
+        <div class="software-card reveal">
+          <div class="software-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" width="32" height="32">
+              <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M14 30l6-8 5 6 4-4 5 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
           <div class="software-card__body">
+            <span class="mono software-card__tag">ОНЛАЙН</span>
             <h4>Калькулятор дисков</h4>
-            <p>Расчёт необходимого объёма HDD для хранения архива</p>
-            <div class="software-card__badges">
-              <span>Онлайн</span>
-            </div>
+            <p>Расчёт объёма HDD для архива</p>
+            <div class="software-card__badges"><span>Онлайн</span></div>
           </div>
-          <a href="https://foxi.kz" target="_blank" class="btn btn--sm btn--primary">Открыть</a>
+          <a href="https://foxi.kz" target="_blank" class="btn btn--sm btn--primary">→ Открыть</a>
         </div>
-
       </div>
-      <p class="software__note">Прошивки для конкретных моделей устройств — обратитесь к нашим специалистам или посетите <a href="https://foxi.kz" target="_blank">foxi.kz</a></p>
     </div>
   </section>
 
   <!-- CTA BANNER -->
   <section class="cta-banner">
+    <div class="cta-banner__grid"></div>
     <div class="container cta-banner__inner">
-      <div>
-        <h2>Получите бесплатный расчёт стоимости</h2>
-        <p>Оставьте заявку — наш специалист свяжется с вами в течение 30 минут</p>
+      <div class="cta-banner__content">
+        <span class="mono cta-banner__tag">// БЕСПЛАТНЫЙ РАСЧЁТ</span>
+        <h2>Получите расчёт стоимости<br/>за <span class="text-red">30 минут</span></h2>
+        <p>Оставьте заявку — специалист свяжется с вами и подберёт оптимальное решение</p>
       </div>
-      <a href="https://wa.me/77000000000" target="_blank" class="btn btn--white btn--lg">
-        Написать в WhatsApp
-      </a>
+      <div class="cta-banner__actions">
+        <a href="https://wa.me/77000000000" target="_blank" class="btn btn--primary btn--lg">
+          Написать в WhatsApp
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="#contacts" class="btn btn--ghost btn--lg">Оставить заявку</a>
+      </div>
     </div>
   </section>
 
   <!-- CONTACTS -->
   <section class="section contacts" id="contacts">
-    <div class="container">
-      <div class="section__header">
-        <span class="section__tag">Контакты</span>
-        <h2 class="section__title">Свяжитесь с нами</h2>
-      </div>
-      <div class="contacts__inner">
-        <div class="contacts__info">
+    <div class="container contacts__layout">
+
+      <div class="contacts__info">
+        <span class="section__tag mono">// 06 · КОНТАКТЫ</span>
+        <h2 class="section__title">Свяжитесь<br/><span class="text-red">с нами</span></h2>
+
+        <div class="contact-items">
           <div class="contact-item">
-            <div class="contact-item__icon">📍</div>
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
             <div>
               <strong>Адрес</strong>
               <p>г. Астана, Казахстан</p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item__icon">💬</div>
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
             <div>
               <strong>WhatsApp</strong>
               <p><a href="https://wa.me/77000000000" target="_blank">Написать в WhatsApp</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item__icon">🌐</div>
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
+            </div>
             <div>
               <strong>Интернет-магазин</strong>
-              <p><a href="https://foxy.kz" target="_blank">foxy.kz</a></p>
+              <p><a href="https://foxi.kz" target="_blank">foxi.kz</a></p>
             </div>
           </div>
-          <div class="contacts__social">
-            <a href="#" target="_blank" class="social-btn" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-            </a>
-            <a href="#" target="_blank" class="social-btn" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </a>
-            <a href="#" target="_blank" class="social-btn" aria-label="YouTube">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
-            </a>
-          </div>
         </div>
-        <form class="contacts__form" id="contactForm">
-          <h3>Оставить заявку</h3>
-          <div class="form-group">
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" name="name" placeholder="Иван Иванов" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Телефон</label>
-            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
-          </div>
-          <div class="form-group">
-            <label for="service">Услуга</label>
-            <select id="service" name="service">
-              <option value="">Выберите услугу...</option>
-              <option>IP Видеонаблюдение</option>
-              <option>HDCVI видеосистемы</option>
-              <option>IP Видеодомофоны</option>
-              <option>Техническое обслуживание</option>
-              <option>Другое</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Сообщение</label>
-            <textarea id="message" name="message" rows="3" placeholder="Опишите вашу задачу..."></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
-          <p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
-        </form>
+
+        <div class="contacts__social">
+          <a href="#" target="_blank" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" target="_blank" class="social-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="#" target="_blank" class="social-btn" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+          </a>
+        </div>
       </div>
+
+      <form class="contacts__form" id="contactForm">
+        <div class="form__header">
+          <span class="mono form__tag">DISPATCH_REQUEST</span>
+          <span class="mono form__status"><span class="status-dot"></span>READY</span>
+        </div>
+        <div class="form-group">
+          <label class="mono">NAME_</label>
+          <input type="text" name="name" placeholder="Иван Иванов" required />
+        </div>
+        <div class="form-group">
+          <label class="mono">PHONE_</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+        </div>
+        <div class="form-group">
+          <label class="mono">SERVICE_</label>
+          <select name="service">
+            <option value="">Выберите услугу...</option>
+            <option>IP Видеонаблюдение</option>
+            <option>HDCVI видеосистемы</option>
+            <option>IP Видеодомофоны</option>
+            <option>Техническое обслуживание</option>
+            <option>Другое</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="mono">MESSAGE_</label>
+          <textarea name="message" rows="3" placeholder="Опишите вашу задачу..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          Отправить заявку
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <p class="form__note mono">// Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+      </form>
+
     </div>
   </section>
 
@@ -563,31 +958,46 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <a href="#" class="logo">
-          <span class="logo__icon">🦊</span>
-          <span class="logo__text">Foxi<span>.kz</span></span>
-        </a>
-        <p>Официальный партнёр Dahua Technology.<br />Системы безопасности в Астане.</p>
+        <div class="footer__logos">
+          <a href="#" class="logo">
+            <span class="logo__mark">
+              <svg width="30" height="30" viewBox="0 0 34 34" fill="none">
+                <rect width="34" height="34" rx="4" fill="#e63000"/>
+                <text x="17" y="24" font-family="serif" font-size="20" font-weight="900" fill="white" text-anchor="middle">F</text>
+              </svg>
+            </span>
+            <span class="logo__text">FOXI<span>.KZ</span></span>
+          </a>
+          <span class="footer__logos-sep"></span>
+          <img src="https://www.dahuasecurity.com/logo.png" alt="Dahua" class="footer__dahua" />
+        </div>
+        <p>Официальный партнёр Dahua Technology.<br/>Системы безопасности в Астане.</p>
       </div>
       <div class="footer__links">
-        <strong>Услуги</strong>
+        <strong class="mono">УСЛУГИ_</strong>
         <a href="#services">IP Видеонаблюдение</a>
         <a href="#services">HDCVI системы</a>
         <a href="#services">Домофоны</a>
         <a href="#services">Монтаж</a>
       </div>
       <div class="footer__links">
-        <strong>Компания</strong>
+        <strong class="mono">КОМПАНИЯ_</strong>
         <a href="#about">О нас</a>
+        <a href="catalog.html">Каталог</a>
         <a href="#software">Скачать ПО</a>
-        <a href="https://foxy.kz" target="_blank">Интернет-магазин</a>
-        <a href="#contacts">Контакты</a>
+        <a href="https://foxi.kz" target="_blank">foxi.kz</a>
+      </div>
+      <div class="footer__links">
+        <strong class="mono">КОНТАКТЫ_</strong>
+        <a href="#contacts">Оставить заявку</a>
+        <a href="https://wa.me/77000000000" target="_blank">WhatsApp</a>
+        <a href="#" target="_blank">Instagram</a>
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container">
-        <span>© 2024 ТОО «foxi.kz». Все права защищены.</span>
-        <span>Астана, Казахстан</span>
+      <div class="container footer__bottom-inner">
+        <span class="mono">© 2024 ТОО «foxi.kz» · Астана, Казахстан</span>
+        <span class="mono" style="color:#00e676">● СИСТЕМА АКТИВНА</span>
       </div>
     </div>
   </footer>
