@@ -1078,14 +1078,23 @@ input, textarea, select, button { font-family: inherit; }
 }
 .mobile-nav__item {
   flex: 1;
+  min-width: 0;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 3px;
-  padding: 10px 4px;
+  padding: 10px 2px;
   color: var(--gray-1);
   font-family: var(--font-mono);
-  font-size: 9px; letter-spacing: 0.5px; text-transform: uppercase;
+  font-size: 8px; letter-spacing: 0; text-transform: uppercase;
   border-top: 2px solid transparent;
   transition: color 0.2s, border-color 0.2s;
+  overflow: hidden;
+}
+.mobile-nav__item span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
 }
 .mobile-nav__item:hover,
 .mobile-nav__item.active { color: var(--white); border-top-color: var(--red); }
