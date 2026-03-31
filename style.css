@@ -196,7 +196,7 @@ input, textarea, select, button { font-family: inherit; }
   color: var(--gray-1); transition: all var(--t);
   letter-spacing: 1px; text-transform: uppercase;
 }
-.nav a:hover { color: var(--white); background: rgba(255,255,255,0.04); }
+.nav a:hover { color: var(--white); background: rgba(0,0,0,0.05); }
 .nav__catalog { color: var(--red) !important; }
 .nav__catalog:hover { background: rgba(230,48,0,0.08) !important; }
 
@@ -1090,7 +1090,8 @@ input, textarea, select, button { font-family: inherit; }
     border-top: 1px solid var(--border);
   }
   .nav.open { display: flex; }
-  .nav a { font-size: 14px; padding: 10px 16px; width: 100%; }
+  .nav a { font-size: 14px; padding: 10px 16px; width: 100%; color: var(--gray-3); }
+  .nav a:hover { background: rgba(0,0,0,0.06); color: var(--white); }
   .burger { display: flex; }
 
   .hero__layout { padding: 60px 28px 80px; }
