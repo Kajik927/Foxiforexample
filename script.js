@@ -36,9 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const now = new Date();
     const time = now.toLocaleTimeString('ru-RU', { hour12: false });
     const el = document.getElementById('liveClock');
-    const el2 = document.getElementById('screenClock');
     if (el) el.textContent = time;
-    if (el2) el2.textContent = 'LIVE · ' + time;
   }
   updateClocks();
   setInterval(updateClocks, 1000);

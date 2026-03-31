@@ -117,75 +117,62 @@
         </div>
       </div>
 
-      <!-- RIGHT: Camera feed grid -->
-      <div class="hero__feeds">
-        <div class="feed feed--large">
-          <div class="feed__bar">
-            <span class="mono feed__id">CAM_01</span>
-            <span class="mono feed__status"><span class="rec-dot"></span> LIVE</span>
-          </div>
-          <div class="feed__content feed__content--main">
-            <svg class="feed__cam-icon" viewBox="0 0 80 60" fill="none">
-              <rect x="5" y="15" width="50" height="35" rx="4" stroke="#e63000" stroke-width="1.5"/>
-              <circle cx="30" cy="32" r="10" stroke="#e63000" stroke-width="1.5"/>
-              <circle cx="30" cy="32" r="5" fill="rgba(230,48,0,0.2)" stroke="#e63000" stroke-width="1"/>
-              <path d="M55 25l18-8v26l-18-8" stroke="#e63000" stroke-width="1.5" stroke-linejoin="round"/>
-            </svg>
-            <span class="mono feed__label">IP ВИДЕОНАБЛЮДЕНИЕ</span>
-            <span class="mono feed__spec">8MP · 4K · AI DETECTION</span>
-          </div>
-          <div class="feed__scan"></div>
-          <div class="feed__corner feed__corner--tl"></div>
-          <div class="feed__corner feed__corner--br"></div>
+      <!-- RIGHT: Stats Panel -->
+      <div class="hsp reveal">
+        <div class="hsp__header">
+          <span class="rec-dot"></span>
+          <span class="mono">СИСТЕМА · АСТАНА</span>
+          <span class="mono hsp__online">● ONLINE</span>
         </div>
-
-        <div class="feed">
-          <div class="feed__bar">
-            <span class="mono feed__id">CAM_02</span>
-            <span class="mono feed__status">● ARMED</span>
-          </div>
-          <div class="feed__content">
-            <svg viewBox="0 0 60 50" fill="none" width="40" height="33">
-              <rect x="5" y="10" width="40" height="28" rx="3" stroke="#666" stroke-width="1.5"/>
-              <circle cx="25" cy="24" r="7" stroke="#666" stroke-width="1.5"/>
-              <path d="M45 18l13-6v20l-13-6" stroke="#666" stroke-width="1.5"/>
-            </svg>
-            <span class="mono" style="font-size:9px;color:#555">HDCVI · COAX</span>
-          </div>
-        </div>
-
-        <div class="feed">
-          <div class="feed__bar">
-            <span class="mono feed__id">CAM_03</span>
-            <span class="mono feed__status" style="color:#e63000">● MOTION</span>
-          </div>
-          <div class="feed__content">
-            <svg viewBox="0 0 50 50" fill="none" width="36" height="36">
-              <rect x="8" y="4" width="22" height="34" rx="3" stroke="#666" stroke-width="1.5"/>
-              <rect x="30" y="14" width="14" height="24" rx="2" stroke="#555" stroke-width="1.5"/>
-              <circle cx="19" cy="21" r="4" stroke="#666" stroke-width="1.5"/>
-            </svg>
-            <span class="mono" style="font-size:9px;color:#555">INTERCOM · IP65</span>
-          </div>
-        </div>
-
-        <div class="feed">
-          <div class="feed__bar">
-            <span class="mono feed__id">CAM_04</span>
-            <span class="mono feed__status" style="color:#00e676">● ONLINE</span>
-          </div>
-          <div class="feed__content">
-            <div class="feed__signal">
-              <span class="mono" style="font-size:10px;color:#00e676">SIGNAL</span>
-              <div class="feed__bars">
-                <span style="height:6px"></span>
-                <span style="height:10px"></span>
-                <span style="height:14px"></span>
-                <span style="height:18px"></span>
-                <span style="height:22px"></span>
-              </div>
+        <div class="hsp__body">
+          <div class="hsp__radar-wrap">
+            <div class="hsp__ring hsp__ring--3"></div>
+            <div class="hsp__ring hsp__ring--2"></div>
+            <div class="hsp__ring hsp__ring--1"></div>
+            <div class="hsp__core">
+              <span class="mono hsp__big">500+</span>
+              <span class="mono hsp__sub">объектов</span>
             </div>
-            <span class="mono" style="font-size:9px;color:#555">PTZ · 25x ZOOM</span>
+          </div>
+          <div class="hsp__zones">
+            <div class="hsp__zone">
+              <span class="mono hsp__zone-label">Алматы</span>
+              <div class="hsp__zone-track"><div class="hsp__zone-bar" style="--w:72%"></div></div>
+              <span class="mono hsp__zone-val">247</span>
+            </div>
+            <div class="hsp__zone">
+              <span class="mono hsp__zone-label">Байконур</span>
+              <div class="hsp__zone-track"><div class="hsp__zone-bar" style="--w:55%"></div></div>
+              <span class="mono hsp__zone-val">183</span>
+            </div>
+            <div class="hsp__zone">
+              <span class="mono hsp__zone-label">Есиль</span>
+              <div class="hsp__zone-track"><div class="hsp__zone-bar" style="--w:40%"></div></div>
+              <span class="mono hsp__zone-val">142</span>
+            </div>
+            <div class="hsp__zone">
+              <span class="mono hsp__zone-label">Нура</span>
+              <div class="hsp__zone-track"><div class="hsp__zone-bar" style="--w:24%"></div></div>
+              <span class="mono hsp__zone-val">89</span>
+            </div>
+          </div>
+        </div>
+        <div class="hsp__footer">
+          <div class="hsp__metric">
+            <span class="mono hsp__metric-num">10+</span>
+            <span class="mono hsp__metric-lbl">лет</span>
+          </div>
+          <div class="hsp__metric">
+            <span class="mono hsp__metric-num">24/7</span>
+            <span class="mono hsp__metric-lbl">поддержка</span>
+          </div>
+          <div class="hsp__metric">
+            <span class="mono hsp__metric-num">2 ч</span>
+            <span class="mono hsp__metric-lbl">выезд</span>
+          </div>
+          <div class="hsp__metric hsp__metric--accent">
+            <span class="mono hsp__metric-num">↑23</span>
+            <span class="mono hsp__metric-lbl">сегодня</span>
           </div>
         </div>
       </div>
@@ -705,61 +692,40 @@
         </div>
       </div>
 
-      <div class="about__monitor reveal">
-        <div class="monitor__header">
-          <div class="monitor__dots">
-            <span></span><span style="background:#e63000"></span><span style="background:#00e676"></span>
+      <div class="about__cert reveal">
+        <div class="acert__badge">
+          <div class="acert__badge-icon">
+            <svg viewBox="0 0 48 48" fill="none" width="28" height="28">
+              <path d="M24 4L6 13v12c0 11 8 20 18 23 10-3 18-12 18-23V13z" stroke="#e63000" stroke-width="1.5"/>
+              <polyline points="16,24 21,30 33,19" stroke="#e63000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-          <span class="mono" id="screenClock">LIVE · 00:00:00</span>
-          <span class="rec-dot"></span>
-        </div>
-        <div class="monitor__feeds">
-          <div class="monitor__feed">
-            <span class="mono monitor__feed-id">CAM_01</span>
-            <div class="monitor__feed-img">
-              <svg viewBox="0 0 60 50" fill="none" width="36">
-                <rect x="5" y="8" width="50" height="36" rx="3" stroke="#333" stroke-width="1.5"/>
-                <rect x="10" y="14" width="18" height="14" rx="1" fill="#1a1a1a" stroke="#444"/>
-                <rect x="32" y="14" width="18" height="14" rx="1" fill="#1a1a1a" stroke="#444"/>
-              </svg>
-            </div>
-          </div>
-          <div class="monitor__feed">
-            <span class="mono monitor__feed-id">CAM_02</span>
-            <div class="monitor__feed-img">
-              <svg viewBox="0 0 60 50" fill="none" width="36">
-                <circle cx="30" cy="25" r="18" stroke="#333" stroke-width="1.5"/>
-                <circle cx="30" cy="25" r="8" stroke="#444" stroke-width="1.5"/>
-                <circle cx="30" cy="25" r="3" fill="#333"/>
-              </svg>
-            </div>
-          </div>
-          <div class="monitor__feed">
-            <span class="mono monitor__feed-id">CAM_03</span>
-            <div class="monitor__feed-img">
-              <svg viewBox="0 0 60 50" fill="none" width="36">
-                <path d="M30 5L8 18v12c0 9 8 16 22 20 14-4 22-11 22-20V18z" stroke="#333" stroke-width="1.5"/>
-                <polyline points="22,25 27,30 38,20" stroke="#e63000" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-          </div>
-          <div class="monitor__feed monitor__feed--main">
-            <span class="mono monitor__feed-id">CAM_04 · MAIN</span>
-            <div class="monitor__feed-img monitor__feed-img--scan">
-              <svg viewBox="0 0 60 50" fill="none" width="46">
-                <rect x="5" y="8" width="50" height="36" rx="3" stroke="#e63000" stroke-width="1.5"/>
-                <circle cx="30" cy="26" r="10" stroke="#e63000" stroke-width="1"/>
-                <circle cx="30" cy="26" r="4" fill="#e63000" opacity="0.3"/>
-                <line x1="5" y1="26" x2="20" y2="26" stroke="#e63000" stroke-width="0.5" opacity="0.5"/>
-                <line x1="40" y1="26" x2="55" y2="26" stroke="#e63000" stroke-width="0.5" opacity="0.5"/>
-              </svg>
-            </div>
-            <div class="monitor__scan"></div>
+          <div>
+            <span class="mono acert__badge-tag">ОФИЦИАЛЬНЫЙ ПАРТНЁР</span>
+            <strong class="acert__badge-name">Dahua Technology</strong>
           </div>
         </div>
-        <div class="monitor__footer">
-          <span class="mono">FOXI.KZ · ASTANA · KZ</span>
-          <span class="mono" style="color:#00e676">● ONLINE</span>
+        <div class="acert__grid">
+          <div class="acert__item">
+            <span class="mono acert__num">500+</span>
+            <span class="acert__label">реализованных<br>проектов</span>
+          </div>
+          <div class="acert__item">
+            <span class="mono acert__num">10</span>
+            <span class="acert__label">лет<br>на рынке</span>
+          </div>
+          <div class="acert__item">
+            <span class="mono acert__num">3 года</span>
+            <span class="acert__label">гарантия на<br>оборудование</span>
+          </div>
+          <div class="acert__item">
+            <span class="mono acert__num">2 часа</span>
+            <span class="acert__label">выезд<br>мастера</span>
+          </div>
+        </div>
+        <div class="acert__footer">
+          <span class="mono">FOXI.KZ · АСТАНА · КЗ</span>
+          <span class="mono acert__online">● РАБОТАЕМ</span>
         </div>
       </div>
     </div>
