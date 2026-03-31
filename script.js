@@ -10,6 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
     header.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
 
+  // ---- MOBILE NAV — Android position fix ----
+  const mobileNav = document.getElementById('mobileNav');
+  if (mobileNav) {
+    function fixNavScroll() {
+      const sx = window.scrollX || window.pageXOffset;
+      if (sx !== 0) {
+        mobileNav.style.left = sx + 'px';
+        mobileNav.style.right = (-sx) + 'px';
+      } else {
+        mobileNav.style.left = '0';
+        mobileNav.style.right = '0';
+      }
+    }
+    window.addEventListener('scroll', fixNavScroll, { passive: true });
+    fixNavScroll();
+  }
+
   // ---- MOBILE BOTTOM NAV — active state on scroll ----
   const mobileNavItems = document.querySelectorAll('.mobile-nav__item[href^="#"]');
   const sections = [];
