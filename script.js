@@ -10,20 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
     header.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
 
-  // ---- MOBILE NAV — Android position fix ----
+  // ---- MOBILE NAV — keep nav locked to viewport on horizontal scroll ----
   const mobileNav = document.getElementById('mobileNav');
   if (mobileNav) {
     function fixNavScroll() {
       const sx = window.scrollX || window.pageXOffset;
-      if (sx !== 0) {
-        mobileNav.style.left = sx + 'px';
-        mobileNav.style.right = (-sx) + 'px';
-      } else {
-        mobileNav.style.left = '0';
-        mobileNav.style.right = '0';
-      }
+      mobileNav.style.left = sx + 'px';
+      mobileNav.style.width = window.innerWidth + 'px';
     }
     window.addEventListener('scroll', fixNavScroll, { passive: true });
+    window.addEventListener('resize', fixNavScroll);
     fixNavScroll();
   }
 
