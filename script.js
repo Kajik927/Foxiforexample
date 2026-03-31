@@ -10,26 +10,28 @@ document.addEventListener('DOMContentLoaded', () => {
     header.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
 
-  // ---- BURGER MENU ----
-  const burger = document.getElementById('burger');
-  const nav = document.getElementById('nav');
-  burger?.addEventListener('click', () => {
-    nav.classList.toggle('open');
-    const spans = burger.querySelectorAll('span');
-    if (nav.classList.contains('open')) {
-      spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      spans[1].style.opacity = '0';
-      spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
-    } else {
-      spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    }
+  // ---- MOBILE BOTTOM NAV — active state on scroll ----
+  const mobileNavItems = document.querySelectorAll('.mobile-nav__item[href^="#"]');
+  const sections = [];
+  mobileNavItems.forEach(item => {
+    const id = item.getAttribute('href').slice(1);
+    const sec = document.getElementById(id);
+    if (sec) sections.push({ el: sec, link: item });
   });
-  nav?.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('open');
-      burger?.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  function updateActiveNav() {
+    const scrollY = window.scrollY + window.innerHeight * 0.3;
+    let active = null;
+    sections.forEach(({ el }) => {
+      if (el.offsetTop <= scrollY) active = el.id;
     });
-  });
+    mobileNavItems.forEach(item => item.classList.remove('active'));
+    if (active) {
+      const found = document.querySelector(`.mobile-nav__item[href="#${active}"]`);
+      if (found) found.classList.add('active');
+    }
+  }
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+  updateActiveNav();
 
   // ---- LIVE CLOCK ----
   function updateClocks() {
