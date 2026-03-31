@@ -1104,6 +1104,13 @@ input, textarea, select, button { font-family: inherit; }
 .mobile-nav__item--accent:hover { color: var(--red); opacity: 0.8; }
 
 @media (max-width: 768px) {
+  /* Make all content immediately visible on mobile — skip reveal animation */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   .mobile-nav { display: flex; }
   body { padding-bottom: 60px; }
 
